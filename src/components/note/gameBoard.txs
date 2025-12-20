@@ -1,0 +1,28 @@
+  function handleSelectSquare(rowIndex, colIndex) {
+        setGameBoard((prevGameBoard) => {
+            //here will copy prevGameBoard and update the specific square
+            const updatedGameBoard = prevGameBoard.map(row => [...row]);
+            updatedGameBoard[rowIndex][colIndex] = "X"; //example symbol
+            return updatedGameBoard;
+        }
+        );
+    }
+
+
+##1st step
+in this code inline 1) we need the row and col of the square to update the value.
+Example:
+
+Click middle square → (rowIndex = 1, colIndex = 1)
+
+Click top-right → (rowIndex = 0, colIndex = 2)
+
+##2nd step
+in react we need to make a copy,change the copy then return it.
+
+###3rd step
+  const updatedGameBoard = prevGameBoard.map(row => [...row]);
+  in this line we get the prev (all value)value stored in the Gameboard = prevGameBoard
+  prevGameBoard.map to get the row{where we get the 3 row}
+  to get the arry from inside the 3 row we use spread operator
+  (row => [...row])

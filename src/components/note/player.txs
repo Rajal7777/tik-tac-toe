@@ -1,0 +1,6 @@
+    ##showing content using ternary operator
+    {isEditing ? 
+            (<input type="text"/> ) : 
+           (<span className="player-name">{name}</span>)}
+
+           //use defaultValue instead of the value so that you can change the input
