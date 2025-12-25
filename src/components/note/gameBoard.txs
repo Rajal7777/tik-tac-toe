@@ -26,3 +26,20 @@ in react we need to make a copy,change the copy then return it.
   prevGameBoard.map to get the row{where we get the 3 row}
   to get the arry from inside the 3 row we use spread operator
   (row => [...row])
+
+##this is the state management from the gameBoard component
+      // const [gameBoard, setGameBoard] = useState(initialGameBoard);
+
+    // function handleSelectSquare(rowIndex, colIndex) {
+    //     setGameBoard((prevGameBoard) => {
+    //         //here will copy prevGameBoard and update the specific square
+    //         const updatedGameBoard = prevGameBoard.map(row => [...row]);
+    //         updatedGameBoard[rowIndex][colIndex] = activePlayerSymbol; //example symbol
+    //         return updatedGameBoard;
+    //     });
+
+    //     onSelectSquare();
+    // }
+
+       //obj destructuring
+    // const { square: { row, col }, player } = turn;

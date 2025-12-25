@@ -1,0 +1,16 @@
+##logic of for loop in winning pattern
+Top Row (0-0, 0-1, 0-2): X, O, null → ❌ Not a win
+
+Middle Row (1-0, 1-1, 1-2): null, X, O → ❌ Not a win
+
+Bottom Row (2-0, 2-1, 2-2): null, null, X → ❌ Not a win
+
+Left Column (0-0, 1-0, 2-0): X, null, null → ❌ Not a win
+
+Middle Column (0-1, 1-1, 2-1): O, X, null → ❌ Not a win
+
+Right Column (0-2, 1-2, 2-2): null, O, X → ❌ Not a win
+
+Main Diagonal (0-0, 1-1, 2-2): X, X, X → ✅ WINNER!
+
+Anti-diagonal (0-2, 1-1, 2-0): null, X, null → ❌ Not a win
